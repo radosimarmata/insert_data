@@ -10,7 +10,7 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
-with open('D:/project/Learn/python/scraper_web/tokopedia_categories.json', 'r') as file:
+with open('categories.json', 'r') as file:
   tokopedia_categories  = json.load(file)
 
 for category in tokopedia_categories:
